@@ -1,0 +1,12 @@
+version: "3.8"
+name: postgres-spring-webflux
+services:
+  service:
+    container_name: postgres
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
